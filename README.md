@@ -1,4 +1,8 @@
 # emailx
+![Rust](https://img.shields.io/badge/rust-stable-brightgreen.svg)
+[![Build Status](https://travis-ci.org/mehcode/emailx-rs.svg?branch=master)](https://travis-ci.org/mehcode/emailx-rs)
+[![Crates.io](https://img.shields.io/crates/d/emailx.svg)](https://crates.io/crates/emailx)
+[![Docs.rs](https://docs.rs/emailx/badge.svg)](https://docs.rs/emailx)
 > Robust email syntax and deliverability validation for Rust.
 
 ## Usage
@@ -14,7 +18,7 @@ use emailx;
 // [...]
 
 emailx::validate("user@domain").map(|is_valid| {
-    // Checks against a very simple regex 
+    // Checks against a very simple regex
     // Checks for at least 1 MX record
 })
 ```
