@@ -1,0 +1,21 @@
+[package]
+name = "emailx"
+version = "0.1.0"
+authors = ["Ryan Leckey <leckey.ryan@gmail.com>"]
+description = "Robust email syntax and deliverability validation."
+homepage = "https://github.com/mehcode/emailx"
+repository = "https://github.com/mehcode/emailx"
+readme = "README.md"
+categories = ["email"]
+keywords = ["email", "address", "validator"]
+license = "MIT/Apache-2.0"
+
+[dependencies]
+regex = "1.0.2"
+lazy_static = "1.1.0"
+trust-dns = { version = "0.15.0-alpha.1", default-features = false }
+failure = "0.1.1"
+futures = "0.1"
+
+[dev-dependencies]
+tokio = "0.1"
